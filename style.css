@@ -1,0 +1,142 @@
+:root{
+    --amarillo:rgb(237, 233, 110);
+    --blanco:#fff;
+    --Rojo:#e3181e;
+    --oscuro:#000;
+    --titulos:'Arima Madurai', cursive;
+    --parrafo:'Mulish', sans-serif;
+}
+
+body {
+    background-image: url(img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    color: var(--oscuro);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.img-1-container, .logo, .img-2 {
+    border-radius: 200px;
+    overflow: hidden;
+}
+
+.img-1-container img, .logo img, .img-2 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-1-container:hover img, .img-2:hover img {
+    transform: scale(1.1);
+}
+
+.logo {
+    flex-shrink: 0;
+    display: flex;
+    width: 25%;
+}
+
+.pollo{
+
+}
+
+.columnas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.columna {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.columna h2 {
+    flex: 1rem;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--amarillo);
+    padding: 10px;
+    margin:0;
+    text-align: center;
+    border-radius: 20px 20px;
+    font-family: 'Arima', cursive;
+    
+}
+
+.img-1-container, .img-2{
+    width: 30%;
+}
+
+.adicional {
+    
+    color: rgb(253, 73, 2);
+    font-size: 20px;
+}
+
+.info{
+    font-size: 20px;
+}
+
+.imgf{
+    width: 180px;
+    margin-left:70%;
+}
+.ubicacion{
+    margin-left: 30%;
+}
+
+
+.productos{
+   
+    font-size: 130%;
+    margin-top: 20% ;
+    font-family:'Times New Roman', Times, serif;
+    color: var(--blanco);
+    font-weight: bold;
+   
+}
+
+.h3{
+    font-size:larger;
+    font-size:20.3px;
+}
+
+.columna .productos .menu span {
+    font-size: 100%;
+    margin-left: 80px;
+    
+}
+.menu p {
+    border: 2px solid #ff9900;   /* Establece un borde blanco alrededor de cada producto */
+    padding: 7px;            /* Agrega un poco de espacio entre el borde y el contenido */
+    display: flex;            /* Usa flexbox para alinear el texto y el precio */
+    justify-content: space-between;  /* Separa el texto y el precio en lados opuestos del contenedor */
+    align-items: center;      /* Centra verticalmente el texto y el precio */
+    margin-bottom: 10px;      /* Agrega un espacio entre cada producto */
+}
+
+.menu span {
+
+    color: #e3181e;
+}
+
